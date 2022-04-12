@@ -1,23 +1,21 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/app.js",
-  "scripts": {
-    "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "A Jekyll Tailwind Portfolio",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/blomman9/Portfolio.git"
   },
   "author": "blomman9",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "copy-webpack-plugin": "^9.0.1"
-  },
-  "devDependencies": {
-    "webpack-cli": "^4.9.2"
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.2.6",
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.6",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6",
+    "tailwindcss": "^2.2.4"
   },
   "bugs": {
     "url": "https://github.com/blomman9/Portfolio/issues"
