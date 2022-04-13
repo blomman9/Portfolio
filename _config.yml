@@ -1,4 +1,4 @@
-baseurl: "/offprint/"
+baseurl: "/"
 permalink: pretty
 title: "Portfolio"
 collections_dir: collections
