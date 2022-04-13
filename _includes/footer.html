@@ -1,3 +1,5 @@
+{% assign copyright = include.copyright %}
+
 <footer class="py-6 border-t-2">
   <div class="container mx-auto">
     <div class="flex mb-2">
@@ -6,8 +8,14 @@
           alt="{{ item.name }}" /></a>
       {% endfor %}
     </div>
+    {% if copyright %}
+    <div class="text-sm text-gray-600">
+      &copy; 2018 - {{ 'now' | date: "%Y" }} | {{site.title}}
+    </div>
+    {% else %}
     <div class="text-sm text-gray-600">
       <span>Free Jekyll theme by</span>
       <a class="text-green-500" href="https://www.zerostatic.io">Zerostatic Themes</a>
     </div>
+    {% endif %}
 </footer>

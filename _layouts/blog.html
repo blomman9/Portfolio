@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <main>
+      {% include header.html %}
+      <section class="articles">
+        {{ content }}
+      </section>
+      {% include footer.html copyright=page.copyright %}
+    </main>
+    {% include category-modal.html %}
+  </body>
+</html>
