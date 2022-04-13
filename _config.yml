@@ -1,4 +1,4 @@
-baseurl: "/"
+baseurl: ""
 permalink: pretty
 title: "Portfolio"
 collections_dir: collections
@@ -39,13 +39,21 @@ collections:
   posts:
     output: true
     permalink: /blog/:path/
+  albums:
+    output: true
+    permalink: /photos/:path
 
 defaults:
   - scope:
-      path: ""
-      type: posts
+      path: "_posts"
     values:
-      layout: post
+      layout: "post"
+      permalink: /blog/:title/
+  - scope:
+      path: "_albums"
+    values:
+      layout: "album"
+      permalink: /photos/:title/
   - scope:
       path: "images"
     values:
@@ -67,6 +75,7 @@ exclude:
   - LICENSE.md
   - LICENSE
   - README.md
+  - DEVELOPMENT.md
   - .vscode
   - .gitignore
   - .liquidrc
