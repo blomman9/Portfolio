@@ -1,0 +1,17 @@
+---
+layout: blog
+title: Photos
+heading: "Photos"
+collection: albums
+copyright: true
+---
+
+<main class="py-6">
+  {% for post in site.albums %}
+  <div class="mb-12">
+    {% include summary.html post=post %}
+  </div>
+  {% endfor %}
+</main>
+
+{% include paginator.html %}
