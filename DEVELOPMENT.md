@@ -2,9 +2,9 @@
 
 ## Setup local
 
-  bundle install
-  # Follow instructions
+    bundle install
+    # Follow instructions
 
 ## Running local
 
-  bundle exec jekyll serve
+    bundle exec jekyll serve
