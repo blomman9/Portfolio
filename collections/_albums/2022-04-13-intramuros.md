@@ -1,7 +1,8 @@
 ---
 layout: album
 title: Visit to Intramuros
-date: 2022-04-14 20:18:00
+date: 2022-04-13 20:18:00
+thumbnail: assets/albums/2019-10-26-intramuros/2019-10-26_Intramuros_PH_6252_preview.png
 categories: [photography]
 ---
 
