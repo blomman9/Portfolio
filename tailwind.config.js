@@ -1,8 +1,15 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./_includes/*.html", "./_layouts/*.html", "./blog/*.html", "./photos/*.html", "./collections/**/*.html", "./*.html"],
-  darkMode: false,
+  content: [
+    "./_includes/*.html",
+    "./_layouts/*.html",
+    "./blog/*.html",
+    "./photos/*.html",
+    "./collections/**/*.html",
+    "./*.html"
+  ],
+  darkMode: "media",
   theme: {
     screens: {
       sm: "640px",
