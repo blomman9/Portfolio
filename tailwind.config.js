@@ -4,12 +4,11 @@ module.exports = {
   content: [
     "./_includes/*.html",
     "./_layouts/*.html",
-    "./blog/*.html",
-    "./photos/*.html",
+    "./{blog,photos}/*.html",
+    './assets/**/*.{js,jsx,ts,tsx,vue}',
     "./collections/**/*.html",
     "./*.html"
   ],
-  darkMode: "media",
   theme: {
     screens: {
       sm: "640px",
@@ -17,13 +16,6 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
     },
-  },
-  variants: {
-    extend: {
-      grayscale: ["hover", "focus"],
-      margin: ["last"],
-    },
-    container: [],
   },
   plugins: [require("@tailwindcss/typography")],
 };
