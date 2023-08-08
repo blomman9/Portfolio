@@ -11,13 +11,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Set Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-      - run: npm ci
+
+      - name: Install Npm
+        run: npm ci
+
       - name: Build the site in the jekyll/builder container
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+
+      - name: artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: |
+            _site
+          retention-days: 5
