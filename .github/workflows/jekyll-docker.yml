@@ -41,7 +41,7 @@ jobs:
       - name: artifact
         uses: actions/upload-artifact@v3
         with:
-          name: _site
+          name: dist
           path: |
             _site
           retention-days: 5
@@ -53,10 +53,12 @@ jobs:
       - name: Download dist artifact
         uses: actions/download-artifact@v3
         with:
-          name: _site
+          name: dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+        with:
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
