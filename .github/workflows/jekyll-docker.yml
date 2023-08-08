@@ -41,7 +41,7 @@ jobs:
       - name: artifact
         uses: actions/upload-artifact@v3
         with:
-          name: dist
+          name: _site
           path: |
             _site
           retention-days: 5
@@ -53,7 +53,7 @@ jobs:
       - name: Download dist artifact
         uses: actions/download-artifact@v3
         with:
-          name: dist
+          name: _site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
