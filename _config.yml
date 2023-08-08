@@ -67,10 +67,7 @@ defaults:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
   - yarn.lock
-  - package.json
-  - package-lock.json
   - vendor
   - LICENSE.md
   - LICENSE
@@ -79,6 +76,4 @@ exclude:
   - .vscode
   - .gitignore
   - .liquidrc
-  - postcss.config.js
-  - tailwind.config.js
   - netlify.toml
