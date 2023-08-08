@@ -8,3 +8,7 @@
 ## Running local
 
     bundle exec jekyll serve
+
+## Running for production
+
+    JEKYLL_ENV=production bundle exec jekyll build
