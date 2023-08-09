@@ -1,11 +1,13 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
+  darkMode: 'class',
   content: [
     "./_includes/*.html",
     "./_layouts/*.html",
     "./{blog,photos}/*.html",
     './assets/**/*.{js,jsx,ts,tsx,vue}',
+    "./categories/*.md",
     "./collections/**/*.html",
     "./*.html"
   ],

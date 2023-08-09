@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body>
-    <main>
+  <body class="dark bg-slate-800 text-white">
+    <main class="container mx-auto px-6 md:px-4">
       {% include heading.html heading=page.title %}
 
-      <section class="album">
+      <section class="album leading-relaxed	">
         <div class="album-header">
           <small class="date">{{page.date | date_to_string}}</small>
           {% if page.authors %}
@@ -18,7 +18,7 @@
             </div>
           {% endif %}
         </div>
-        <div class="content">{{content}}</div>
+        <div class="post">{{content}}</div>
       </section>
       {% include footer.html %}
     </main>
