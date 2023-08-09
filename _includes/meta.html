@@ -1,14 +1,6 @@
-<title>
-  {% if page.meta_title %}
-    {{ page.meta_title }}
-  {% elsif page.title %}
-    {{ page.title }}
-    -
-    {{ site.title}}
-  {% else %}
-    {{ site.title }}
-  {% endif %}
-</title>
+<title>{% if page.meta_title %}{{ page.meta_title }}
+  {% elsif page.title %} {{ page.title }} - {{ site.title}}
+  {% else %}{{ site.title }}{% endif %}</title>
 
 {% if page.meta_description %}
   <meta name="description" content="{{ page.meta_description }}"/>
