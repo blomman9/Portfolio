@@ -31,6 +31,7 @@ plugins:
   - jekyll-environment-variables
   - jekyll-postcss
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-seo-tag
 
 paginate: 3
