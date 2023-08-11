@@ -1,6 +1,6 @@
 ---
 layout: album
-title: Intramuros · A 2019 Snapshot
+title: "Intramuros : A 2019 Snapshot"
 meta_title: Intramuros Manila - A 2019 Adventure of History and Modern Charm
 description: Explore the enchanting blend of history and modern allure in Intramuros, Manila. Delve into cobblestone streets, architectural wonders like San Agustin Church, vibrant street art, and thrilling bike adventures that defined "A visit to Intramuros in 2019." Witness sunsets that cast a golden glow over historical landmarks. Embark on a journey that captures the essence of old and new, perfect for modern adventurers seeking an unforgettable experience.
 date: 2020-01-03 12:18:00
