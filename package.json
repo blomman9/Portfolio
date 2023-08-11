@@ -1,10 +1,10 @@
 {
-  "name": "portfolio",
+  "name": "blomman9.github.io",
   "version": "1.0.0",
-  "description": "A Jekyll Tailwind Portfolio",
+  "description": "My Jekyll Tailwind Portfolio",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/blomman9/Portfolio.git"
+    "url": "git+ssh://git@github.com/blomman9/blomman9.github.io.git"
   },
   "author": "blomman9",
   "license": "MIT",
